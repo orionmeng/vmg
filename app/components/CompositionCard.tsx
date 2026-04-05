@@ -11,9 +11,9 @@ export default function CompositionCard({ comp }: { comp: Composition }) {
       </div>
 
       <div className="mb-3 flex flex-wrap gap-2">
-        {comp.agents.map((agent) => (
+        {comp.agents.map((agent, i) => (
           <span
-            key={agent}
+            key={`${agent}-${i}`}
             className="rounded bg-val-teal px-2 py-1 text-sm text-val-cream-dark"
           >
             {agent}
