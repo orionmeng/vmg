@@ -2,7 +2,7 @@ import type { Agent } from "./types";
 
 export const agents: Agent[] = [
   // S Tier
-  { id: "wayley", name: "Wayley", role: "Duelist", tier: "S", description: "" },
+  { id: "waylay", name: "Waylay", role: "Duelist", tier: "S", description: "" },
   { id: "neon", name: "Neon", role: "Duelist", tier: "S", description: "" },
   { id: "sova", name: "Sova", role: "Initiator", tier: "S", description: "" },
   { id: "jett", name: "Jett", role: "Duelist", tier: "S", description: "" },
