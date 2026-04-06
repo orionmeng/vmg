@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import PageHeader from "@/app/components/PageHeader";
+import PatchNoteCard from "@/app/components/PatchNoteCard";
+import { patchNotes } from "@/app/lib/patch-notes-data";
 
 export const metadata: Metadata = {
   title: "Patch Notes",
@@ -8,10 +11,15 @@ export const metadata: Metadata = {
 export default function PatchNotesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="mb-2 text-3xl font-bold">Patch Notes</h1>
-      <p className="text-val-cream-dark">
-        Latest Valorant patch notes and game updates.
-      </p>
+      <PageHeader
+        title="Patch Notes"
+        description="Latest Valorant patch notes and game updates."
+      />
+      <div className="grid gap-4">
+        {patchNotes.map((patch) => (
+          <PatchNoteCard key={patch.id} patch={patch} />
+        ))}
+      </div>
     </div>
   );
 }
