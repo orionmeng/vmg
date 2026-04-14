@@ -18,9 +18,11 @@ export default function Nav() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link
           href="/"
-          className="text-xl font-bold tracking-widest uppercase text-val-red"
+          className="text-xl font-bold tracking-widest"
         >
-          VMG
+          <span className="text-val-red">V</span>alo
+          <span className="text-val-red">M</span>eta
+          <span className="text-val-red">G</span>uide
         </Link>
 
         <ul className="flex gap-1 sm:gap-2">
