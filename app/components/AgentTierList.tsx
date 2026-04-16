@@ -42,7 +42,7 @@ export default function AgentTierList({ agents }: { agents: Agent[] }) {
               <h2 className="mb-3 text-xl font-bold text-val-cream">
                 {tier} Tier
               </h2>
-              <div className="grid gap-3 sm:grid-cols-2">
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
                 {tierAgents.map((agent) => (
                   <AgentCard key={agent.id} agent={agent} />
                 ))}

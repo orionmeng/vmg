@@ -7,6 +7,7 @@ export interface Agent {
   role: Role;
   tier: Tier;
   description: string;
+  iconUrl: string;
 }
 
 export interface Composition {
